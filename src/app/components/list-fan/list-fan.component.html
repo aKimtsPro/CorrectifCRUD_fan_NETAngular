@@ -1,0 +1,10 @@
+
+<ul>
+
+    <button routerLink="/create"> créer un nouveau fan </button>
+
+    <li *ngFor="let fan of fans">  
+        <a routerLink="/detail/{{fan.id}}">{{fan.nom}}</a>        
+    </li>
+
+</ul>

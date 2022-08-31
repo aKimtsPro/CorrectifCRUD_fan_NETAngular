@@ -1,0 +1,20 @@
+
+<h2>Create fan</h2>
+
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <div>
+        <label for="in-nom">nom</label><br>
+        <input type="text" id="in-nom" formControlName="nom">
+    </div>
+
+    <div>
+        <label for="in-datenaiss">date de naissance</label><br>
+        <input type="date" id="in-datenaiss" formControlName="dateNaiss">
+    </div>
+
+    <button type="submit">créer</button>
+    <button type="button" routerLink="/list">retour à la liste</button>
+
+</form>

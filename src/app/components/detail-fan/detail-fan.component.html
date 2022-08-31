@@ -1,0 +1,19 @@
+
+<div>
+
+    <h2>Details de fan (id: {{fan.id}})</h2>
+
+    <p><span>nom:</span> {{ fan.nom }} </p>
+    <p><span>date de naissance:</span> {{ fan.dateNaiss | date:"dd/MM/yyyy" }} </p>
+    
+    <h3>Séries préférées:</h3>
+
+    <button routerLink="/update/{{fan.id}}">modifier la liste</button>
+    <ul>
+        <li *ngFor="let serie of fan.series"> {{ serie }} </li>
+    </ul>
+    
+    <button routerLink="/list">vers la liste</button>
+
+
+</div>

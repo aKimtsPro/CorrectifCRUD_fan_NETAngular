@@ -1,0 +1,16 @@
+<h2>modifier les series préférées de {{fan.nom}} (id: {{fan.id}})</h2>
+
+<div>
+    <input type="text" [(ngModel)]="serie">
+    <button (click)="onAdd()">ajouter</button>
+</div>
+
+<div>
+    <ul>
+        <li *ngFor="let serie of fan.series; let i=index">{{serie}} <button (click)="delete(i)">delete</button> </li>
+    </ul>
+</div>
+
+<button routerLink="/list">vers la liste</button>
+<button routerLink="/detail/{{fan.id}}">retour aux détails</button>
+
