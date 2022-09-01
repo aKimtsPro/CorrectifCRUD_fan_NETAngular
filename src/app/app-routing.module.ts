@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
 import { CreateFanComponent } from './components/create-fan/create-fan.component';
 import { DetailFanComponent } from './components/detail-fan/detail-fan.component';
 import { ListFanComponent } from './components/list-fan/list-fan.component';

@@ -29,7 +29,7 @@ export class UpdateFanComponent implements OnInit {
   }
 
   onAdd(){
-    this.fan.series.push( "truc show" );
+    this.fan.series.push( this.serie.trim() );
     this.serie = '';
   }
 
